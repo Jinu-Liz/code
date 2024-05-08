@@ -64,6 +64,12 @@ public class App {
 
     System.out.println("---------------------------------------");
 
+    // 어노테이션 가져오기
+    Arrays.stream(MyBook.class.getAnnotations())
+      .forEach(System.out::println);
+
+    System.out.println("---------------------------------------");
+
     // 그 외 여러 정보를 알 수 있다.
     Arrays.stream(bookClass.getDeclaredFields())
       .forEach(f -> {
@@ -72,5 +78,7 @@ public class App {
         System.out.println(Modifier.isPrivate(modifiers));  // private 여부
         System.out.println(Modifier.isStatic(modifiers));   // static 여부
       });
+
+
   }
 }

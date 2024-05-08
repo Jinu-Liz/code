@@ -1,5 +1,8 @@
 package the.java.code.book;
 
+import the.java.code.MyAnnotation;
+
+@MyAnnotation("jinu")
 public class Book {
 
   private String title;
@@ -8,6 +11,7 @@ public class Book {
 
   private static final String STATIC_TYPE = "BOOK TYPE";
 
+  @MyAnnotation
   public String pubVal = "d";
 
   protected String proVal = "e";
