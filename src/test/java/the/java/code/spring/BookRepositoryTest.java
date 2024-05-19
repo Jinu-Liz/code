@@ -1,4 +1,4 @@
-package the.java.code.book;
+package the.java.code.spring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,16 +7,15 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class BookServiceTest {
+class BookRepositoryTest {
 
-  @Autowired BookService bookService;
+  @Autowired BookRepository bookRepository;
 
+  /**
+   * BookRepository는 인터페이스인데 인스턴스가 생성됨.
+   */
   @Test
   void di() {
-    /**
-     * new로 생성하지 않았지만, null이 아니다.
-     */
-    assertNotNull(bookService);
-    assertNotNull(bookService.bookRepository);
+    assertNotNull(bookRepository);
   }
 }
