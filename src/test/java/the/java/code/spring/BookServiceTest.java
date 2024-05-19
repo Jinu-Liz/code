@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Spring을 사용하지 않은 Proxy 패턴
  */
-class DefaultBookServiceTest {
+class BookServiceTest {
 
   Bookservice bookservice = new BookServiceProxy(new DefaultBookService());
 
