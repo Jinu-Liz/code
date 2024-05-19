@@ -26,6 +26,7 @@ dependencies {
     implementation 'com.h2database:h2'
     implementation 'net.bytebuddy:byte-buddy'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.mockito:mockito-core'
 
     // https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy
     implementation 'net.bytebuddy:byte-buddy:1.14.14'
