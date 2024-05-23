@@ -16,6 +16,9 @@ import javax.tools.Diagnostic;
 import java.io.IOException;
 import java.util.Set;
 
+/**
+ * 모자에서 토끼를 꺼내는 코드를 생성하는 로직
+ */
 @AutoService(Processor.class)
 public class MagicMojaProcessor extends AbstractProcessor {
 
